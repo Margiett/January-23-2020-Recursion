@@ -33,11 +33,26 @@ class ViewController: UIViewController {
         print(num) //20
         countDownToZero(from: num - 1) // recursive call
         
-        // countDownToZero(19
+        // countDownToZero(19)
+        // countDownToZero (18)
+        // countDownToZero (17)
+        // countDownToZero (16)
         
     }
     //MARK: example - factorial
-    //MARK: what is the benefit why do we use it ?? : for combination 
+    //MARK: formula for finding factorial is n * (n - 1)
+    //MARK: factorial is used to find the number of permutation of a given is this case number
+    func factorial(_ n: Int) -> Int {
+        guard n > 1 else { return 1 } // base case
+        return n * factorial(n - 1)
+        // 4 * factorial (3) -> 24
+        // 3 * factorial (2) -> 6
+        // 2 * factorial (1) -> 2
+        // factorial(1) -> 1
+        
+        
+    }
+     
 
 }
 
